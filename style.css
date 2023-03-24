@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik+Dirt&family=Urbanist:wght@100&display=swap");
+body {
+  font-family: "Poppins";
+}
+* {
+  scroll-behavior: smooth;
+}
+.navbar {
+  position: absolute;
+  left: 600px;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.navbar-on {
+  color: white;
+  text-decoration: none;
+}
+.img1 {
+  width: 1518px;
+  height: 905px;
+  margin: -9px -7px 0px -7px;
+}
+.weekname {
+  position: absolute;
+  color: #ffffff;
+  left: 250px;
+  bottom: -173px;
+}
+.time {
+  position: absolute;
+  color: #ffffff;
+  left: 345px;
+  bottom: -173px;
+}
+.cardNo1 {
+  height: 250px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.weatherleftdata {
+  width: 52px;
+  height: 26px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.weatherrightdata {
+  width: 68px;
+  height: 28px;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+.card1divs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.chw {
+  padding-top: 20px;
+}
+.chwright {
+  padding-top: 20px;
+}
+.livenumberdatatop {
+  position: absolute;
+  width: 151px;
+  height: 192px;
+  left: 107px;
+  top: 609px;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 90px;
+  /* line-height: 192px; */
+}
+
+.degreesup {
+  position: absolute;
+  width: 151px;
+  height: 192px;
+  left: 130px;
+  bottom: 65px;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 68px;
+  line-height: 192px;
+}
+
+.livedatacity {
+  position: absolute;
+  width: 221px;
+  height: 78px;
+  left: 111px;
+  top: 770px;
+  color: aliceblue;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 78px;
+}
+.livedatatime {
+  position: absolute;
+  width: 321px;
+  height: 38px;
+  left: 155px;
+  top: 820px;
+  color: aliceblue;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 78px;
+}
+
+/* citycard */
+
+.city-full {
+  height: 100vh;
+  width: 1519px;
+  margin: -5px -6px 0px -8px;
+  background-color: white;
+  justify-content: center;
+}
+.cit-title {
+  font-weight: 200;
+  font-size: 18px;
+  color: #110041;
+}
+.citycards {
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  width: 1000px;
+}
+.citycard1 {
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 21px 26px grey;
+}
+.citycard1:hover {
+  transform: scale(1.1);
+  /* z-index: 1; */
+  color: black;
+}
+
+.card-img-city1 {
+  border-radius: 10px;
+  height: 300px;
+  width: 298px;
+  border: 1px solid black;
+}
+.card-title-city1 {
+  color: rgb(253, 253, 253);
+  top: 50px;
+  position: absolute;
+  width: 103px;
+  height: 36px;
+  top: 1200px;
+  font-weight: 600;
+  font-size: 27px;
+  padding-left: 25px;
+}
+.card-title-city {
+  color: rgb(253, 253, 253);
+  top: 50px;
+  position: absolute;
+  width: 103px;
+  height: 36px;
+  top: 1225px;
+  font-weight: 600;
+  font-size: 27px;
+  padding-left: 25px;
+}
+.city-card1-number1 {
+  position: absolute;
+  width: 80px;
+  height: 96px;
+  top: 1269.5px;
+  padding-left: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  font-weight: 800;
+}
+.city-card1-degreesup1 {
+  position: absolute;
+  top: -7px;
+  font-weight: 100;
+  font-size: 24px;
+}
+.city-livedatacity1 {
+  width: 62px;
+  height: 36px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+.city-livedatatime1 {
+  width: 64px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+.card-city-date {
+  position: absolute;
+  width: 80px;
+  height: 96px;
+  top: 1269.5px;
+  padding-left: 160px;
+  padding-top: 56px;
+}
+
+/* search */
+
+.searchs-des {
+  position: relative;
+  /* margin-bottom:200px ; */
+  background: #ffffff;
+  box-shadow: 2px 21px 26px rgb(167, 167, 167);
+  width: 361px;
+  height: 60px;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 21px;
+}
+.search-icon {
+  color: rgb(3, 3, 12);
+  margin-bottom: 200px;
+  font-weight: 1000;
+  width: 161px;
+  height: 50px;
+}
+i {
+  right: 60px;
+  background-color: #ffff;
+  top: 8.39%;
+  bottom: 24.64%;
+  font-size: 22px;
+  background: rgba(253, 253, 253, 0.53);
+  position: relative;
+}
+.search-full-move {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+/* earth */
+.earth-fill {
+  height: 130vh;
+  width: 1539px;
+  /* margin: -90px -6px 0px -8px; */
+  background-color: rgb(0, 0, 0);
+}
+.thumbnail {
+  max-width: 100%;
+}
+
+.thumbnail {
+  max-width: 90%;
+}
+.lightbox {
+  position: absolute;
+
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.lightbox img {
+  max-width: 90%;
+  max-width: 80%;
+  margin-top: 2%;
+}
+.lightbox:target {
+  outline: none;
+  display: block;
+}
+
+.cit-newstitle {
+  font-weight: 200;
+  font-size: 18px;
+  color: #110041;
+}
+
+.news-full {
+  border: 2px solid red;
+  height: 100vh;
+  width: 1519px;
+  margin-top: 100px;
+  display: flex;
+}
+.newscard1 {
+  position: absolute;
+
+  height: 400px;
+  width: 300px;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 2px 21px 26px grey;
+}
+.card1:hover {
+  transform: scale(1.1);
+  /* z-index: 1; */
+  color: black;
+}
+
+.card-img-news1 {
+  height: 400px;
+  width: 300px;
+}
+.card-title-new1 {
+  left: 30px;
+  position: absolute;
+  width: 191px;
+  height: 67px;
+  color: #ffffff;
+  top: 280px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.newscard2 {
+  position: absolute;
+
+  height: 400px;
+  width: 300px;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 2px 21px 26px grey;
+}
+
+.card-img-news2 {
+  height: 400px;
+  width: 300px;
+}
+.card-title-new2 {
+  left: 30px;
+  position: absolute;
+  width: 191px;
+  height: 67px;
+  color: #ffffff;
+  top: 280px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* new */
+.new-fulls {
+  /* height: 600px; */
+}
+.new-titles {
+  font-weight: 200;
+  font-size: 18px;
+  color: #110041;
+  display: flex;
+  justify-content: center;
+}
+.newcardss {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.card-title-new3 {
+  font-size: 30px;
+  color: rgb(253, 253, 253);
+  position: absolute;
+  width: 190px;
+  height: 38px;
+  top: 2955px;
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+.card-title-new2 {
+  font-size: 30px;
+  color: rgb(253, 253, 253);
+  /* top: 50px; */
+  position: absolute;
+  width: 190px;
+  height: 38px;
+  top: 2955px;
+  left: 610px;
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+/* footer */
+
+.footer-full {
+  margin-top: 200px;
+  height: 300px;
+  background-color: black;
+}
+.foot-left {
+  position: absolute;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 5px;
+  left: 50px;
+  width: 121px;
+  height: 38px;
+  top: 3422px;
+  font-family: "Phenomicon";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.div-fr1 {
+  position: absolute;
+  width: 111px;
+  height: 30px;
+  left: 1112px;
+  top: 3476px;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.div-fr2 {
+  position: absolute;
+  width: 111px;
+  height: 30px;
+  left: 1213px;
+  top: 3478.5px;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}

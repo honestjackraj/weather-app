@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <title>Weather APIt</title>
+  </head>
+  <body>
+    <div>
+      <ul class="navbar" >
+      <a class="navbar-on" href="#">Home</a>
+      <a class="navbar-on" href="#Cities">Cities</a>
+      <a class="navbar-on" href="#neww">News</a>
+    </ul>
+      
+    </div>
+
+    <img class="img1" src="/image/A+Prayer+for+Greater+Faith.jpg" alt="image" />
+
+    <div>
+      <div class="cardNo1">
+        <h2 class="weatherdetails">Weather Details</h2>
+        <div class="card1divs">
+          <div class="weatherleftdata">
+            <div class="chw">Cloudy</div>
+            <div class="chw">Humidity</div>
+            <div class="chw">Wind</div>
+          </div>
+          <div class="weatherrightdata">
+            <div class="chwright">62%</div>
+            <div class="chwright">10%</div>
+            <div class="chwright">8km/h</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="livedata">
+        <h1 class="livenumberdatatop" id="temp">32 <sup class="degreesup">o</sup></h1>
+      </div>
+      <b class="livedatacity"  id="city" >Mumbai</b>
+      <b class="livedatatime"  id="currentdate1"  > 09/03/23</b><span  class="weekname" id="currentweekday" >Thursday </span> <span  class="time" id="currenttime" >06:45  </span>
+    
+  </div>
+
+
+    <!-- #city -->
+   <center>
+    <div id='Cities'>
+    <div class="city-full">
+        <div class="cit-title"><h1>Cities</h1></div>
+        <div class="citycards">
+          <div class="citycard1">
+            <img
+              src="/image/photo-1561553543-e4c7b608b98d.avif"
+              class="card-img-city1"
+              alt="..."
+            />
+            <h1 class="card-title-city" id="weather">Thunder</h1>
+            <div>
+              <h1 class="city-card1-number1">
+                29 <sup class="city-card1-degreesup1">o</sup>
+              </h1>
+              <div class="card-city-date">
+              <b class="city-livedatacity1">Delhi</b><br />
+              <b class="city-livedatatime1" id="currentdate1"> 09/03/23</b>
+
+          </div>
+            </div>
+          </div>
+          <div class="citycard1">
+              <img
+                src="/image/images (1).jpg"
+                class="card-img-city1"
+                alt="..."
+              />
+              <h5 class="card-title-city1">Cloudy</h5>
+              <div>
+                <h1 class="city-card1-number1">
+                  29 <sup class="city-card1-degreesup1">o</sup>
+                </h1>
+                <div class="card-city-date">
+                <b class="city-livedatacity1">chennai</b><br />
+                <b class="city-livedatatime1" id="currentdate2"> 09/03/23</b>
+
+            </div>
+              </div>
+            </div>
+            <div class="citycard1">
+              <img
+                src="/image/images.jpg"
+                class="card-img-city1"
+                alt="..."
+              />
+              <h5 class="card-title-city1">Sunny</h5>
+              <div>
+                <h1 class="city-card1-number1">
+                40 <sup class="city-card1-degreesup1">o</sup>
+                </h1>
+                <div class="card-city-date">
+                <b class="city-livedatacity1">jaipur</b><br />
+                <b class="city-livedatatime1" id="currentdate3"> 09/03/23</b>
+            </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+   </center>
+
+    <!-- #search -->
+    <div class="search-full-move">
+      <form class="search-all">
+        <div class="input-group mb-3">
+            <input id="city-name" type="text" class="searchs-des" placeholder="Search city"></span><i  class="fa-solid fa-magnifying-glass" onclick="searchTemperature()"></i></span>
+            
+        </div>
+    </form>
+    
+    </div>
+
+
+     <!-- #earth -->
+
+     <div class="earth-fill" >
+        <div class="earth">
+            <a href="#img1">
+                <img src="/image/ear1.png" alt="" class="thumbnail">
+            </a>
+
+           
+
+        </div>
+
+     </div>
+
+     <!-- news -->
+
+     <div id='neww'>
+
+     <div class="new-fulls">
+      <div class="new-titles"><h1>News</h1></div>
+      <div class="newcardss">
+        <div class="newccccce">
+          <img
+            src="/image/photo-1561553543-e4c7b608b98d.avif"
+            class="card-img-city1"
+            alt="..."
+          />
+          <h5 class="card-title-new3">Thunder Strikes Delhi</h5>
+
+       
+          </div>
+        <div class="newccccce">
+          <img
+            src="/image/photo-1579619272436-7bf4271f0bff.jpg"
+            class="card-img-city1"
+            alt="..."
+          />
+          <h5 class="card-title-new2">Cloudstroms in manipur</h5>
+
+       
+          </div>
+        <div class="newccccce">
+          <img
+            src="/image/images.jpg"
+            class="card-img-city1"
+            alt="..."
+          />
+          <h5 class="card-title-new3">Its Summer season in Mumbai</h5>
+
+       
+          </div>
+          </div>
+          </div>
+        
+        </div>
+<!-- footer -->
+
+<div class="footer-full" >
+
+  <div class="foot-left" >
+
+    <h2>WEATHERAPP</h2>
+
+  </div>
+  <div foot-right>
+
+    <div class="div-fr1">
+      <b>Home</b>
+      <b>Cities</b>
+      <b>News</b>
+      
+    </div>
+    <div class="div-fr2">
+      <b>Contact us</b>
+      <b>faQs</b>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
